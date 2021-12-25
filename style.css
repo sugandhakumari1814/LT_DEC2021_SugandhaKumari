@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0;
+    margin: auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+.btn{
+    padding: 7px 12px;
+    background-color: rgba(255, 143, 15, 0.712);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 30px;
+    margin-left: 40%;
+    border: 2px solid white;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid rgba(255, 143, 15, 0.712);
+} 
+
+
+
+#navbar{
+    position: sticky;
+    top: 0px;
+}
+#navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px;
+}
+#logo img{
+    margin: 2px 10px;
+    height: 40px;
+}
+
+/* Navigation Bar: List Styling*/
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+     display: block;
+     padding: 3px 22px;
+     border-radius: 20px;
+     text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgba(255, 143, 15, 0.712);
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#home::before{
+    content: "";
+    background:url(image/home.jpeg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+#home h2{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* About section stylling */
+#about .title{
+    margin-top: 150px;
+}
+#about .about-content{
+    display: flex;
+}
+#about .about-content .left{
+    width: 45%;
+}
+#about .about-content .left img{
+   height: 400px;
+   width: 400px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+#about .about-content .right{
+    width: 55%;
+}
+#about .about-content .right h3{
+    font-size: 28px;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 30px;
+    color: rgba(255, 143, 15, 0.979);
+}
+#about .about-content .right .text{
+    font-size: 33px;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#about .about-content .right .text span{
+    color: rgba(255, 143, 15, 0.979);
+}
+#about .about-content .right p{
+    text-align: justify;
+    font-size: 23px;
+}
+/* Services Section */
+#service{
+    margin-top: 100px;
+    padding: 1px ;
+    background: rgb(0, 0, 8);
+}
+#service .title{
+    color: #fff;
+}
+#service h2{
+    padding: 8px;
+    font-family: 'Dancing Script', cursive;
+    
+}
+#services{
+    margin: 34px;
+    display: flex;
+   
+}
+#services .box{
+    border: 3px solid rgba(255, 143, 15, 0.712);
+    margin: 12px 30px;
+    padding: 25px;
+    border-radius: 28px;
+    background-color: rgb(235, 207, 235);
+
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    height: 100px;
+}
+#services p{
+    text-align: justify;
+    padding: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Gallery section stylling */
+
+#gallery{
+    padding: 2px;
+    color: white;
+    background: rgba(255, 143, 15, 0.712);
+}
+#gallery .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+#gallery .carousel .card:hover{
+    background: crimson;
+}
+#gallery .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    transition: all 0.3s ease;
+}
+#gallery .carousel .card .box img{
+    height: 250px;
+   
+}
+#gallery .carousel .card .box p span{
+    color: crimson;
+    font-weight: 600;
+}
+#gallery .carousel .card:hover p span{
+    color: #111;
+}
+#gallery .carousel .card:hover .box{
+   transform: scale(1.05);
+}
+#gallery .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot.hover{
+    background: crimson!important;
+    border: 2px solid #222!important;
+}
+
+
+/* Contact Stylling */
+#contact{
+    background: black;
+    color: #fff;
+    padding: 2px;
+}
+#contact .contact-content{
+    display: flex;
+    justify-content: space-between;
+}
+#contact .contact-content .coloumn{
+    padding-left: 40px;
+}
+#contact .contact-content .text{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#contact .contact-content .left {
+    margin: 10px 0;
+    cursor: pointer;
+}
+#contact .contact-content .left ul li{
+    list-style: none;
+}
+#contact .contact-content .left ul li a{
+    color: #fff;
+    font-weight: 500;
+   font-size:23px;
+}
+#contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    margin: 0 20px;
+    align-items: center;
+}
+#contact .contact-content .row .info{
+    margin-left: 30px;
+}
+#contact .contact-content .row i{
+    font-size: 25px;
+    color: rgba(255, 143, 15, 0.712);
+}
+#contact .contact-content .info .head{
+    font-weight: 500;
+}
+#contact .contact-content .info .sub-title{
+    color: wheat;
+}
+#contact .link{
+    margin: 20px;
+}
+#contact .link a{
+    font-size: 23px;
+    font-weight: 500;
+    color: white;
+}
+#contact .link i{
+    color: rgba(255, 143, 15, 0.712);
+}
+#contact .link a span{
+    margin-left: 30px;
+    transition: all 0.3s ease-in;
+}
+
+#contact .link a:hover span{
+    background-color: rgb(17, 19, 20);
+    color: rgba(255, 143, 15, 0.712);
+    padding: 5px;
+    border-radius: 5px;
+}
+#contact .link a:hover i{
+    color: wheat;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 22px 20px;
+}
+footer span a
+{
+    margin: 0 10px;
+    font-family: 'Dancing Script', cursive;
+    color: rgba(255, 143, 15, 0.712);
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media (max-width:1400px){
+/* About section stylling */
+    #about .title{
+        margin-top: 200px;
+    }
+}
+
+
+@media (max-width:1204px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .about .about-content .left img{
+      height: 350px;
+      width: 350px;
+   }
+}
+
+
+
+@media (max-width:1050px){
+/* Home Section */
+    #home{
+        padding: 3px 14px;
+        height: 470px;
+    }
+    #home::before{
+        height: 550px;
+    }
+    #home h1{
+        font-size: 35px;
+    }
+    #home h2{
+        font-size: 14px;
+    }
+    #home p{
+        font-size:16px;
+    }
+
+/* About section */
+    #about .title{
+        margin-top: 80px;
+    }
+    #about .about-content{
+        display: block;
+    }
+    #about .about-content .column{
+        width: 100%;
+    }
+    #about .about-content .left{
+        justify-content:center ;
+        margin-bottom: 60px;
+        display: flex;
+    }
+    #about .about-content .right{
+        flex: 100%;
+    }
+    #about #about-content #right p{
+        font-size: 17px;
+    }
+
+/* Service Section */
+    #services{
+        flex-direction: column;
+    }    
+    #services .box{
+        margin: 10px 0px;
+        padding: 12px;
+    }
+    #services .box img{
+        width: 100px;
+        height: 80px;
+    }
+
+}
+
+@media (max-width:750px){
+    .max-width{
+        max-width: 600px;
+    }
+    #logo img{
+        height: 30px;
+    }
+    #navbar .max-width{
+        flex-direction: column;
+    }
+    .btn{
+        font-size: 0.9rem;
+        margin-left: 30%;
+    }
+    #navbar .max-width ul li a{
+        font-size: 0.9rem;
+        padding: 0px 5px;
+    }
+    #about .title{
+        margin-bottom: 50px;
+    }
+    #about .about-content .left img{
+        height: 300px;
+        width: 300px;
+    }
+    #about .about-content .right p{
+        font-size: 18px;
+    }
+    #service p{
+        font-size: 15px;
+    }
+    #contact .contact-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact .contact-content .coloumn{
+        padding: 10px 0;
+    }
+
+}
+
+@media (max-width:450px){
+    .title{
+        font-size: 40px;
+    }
+    #logo{
+        margin: 4px;
+    }
+    #logo img{
+        height: 25px;
+    }
+
+    #navbar ul li a{
+        padding: 3px 12px;
+    }
+    #home h1{
+        font-size: 30px;
+    }
+    #home h2{
+        font-size: 12px;
+    }
+    #home p{
+        font-size:13px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+    #services .box img{
+        height: 80px;
+        width: auto;
+    }
+    #contact .contact-content .coloumn{
+        padding-left: 0px;
+    }
+    #contact .contact-content .left ul li a,
+    #contact .link a{
+        font-weight: 400;
+        font-size:17px;
+    }
+    #contact .contact-content .row i{
+        font-size: 17px;
+    }
+    #contact .contact-content .text{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #contact .contact-content .row{
+        margin: 0 8px;
+    }
+    #contact .contact-content .info .sub-title{
+        font-size: 14px;
+    }
+
+    #contact .link{
+        margin: 20px 8px;
+    }
+    footer{
+        font-size: 13px;
+    }
+}
+@media (max-width:450px){
+    #contact .contact-content .row{
+        margin: 0px ;
+    }
+    #contact .link{
+        margin:10px 0px;
+    }
+}
